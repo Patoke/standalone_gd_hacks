@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="hacks\free_chests.cpp" />
+    <ClCompile Include="hacks\free_shop.cpp" />
     <ClCompile Include="hacks\noclip.cpp" />
+    <ClCompile Include="hacks\shop_bypass.cpp" />
     <ClCompile Include="hacks\unlockall.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

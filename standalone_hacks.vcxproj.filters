@@ -24,6 +24,15 @@
     <ClCompile Include="hacks\unlockall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hacks\free_chests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hacks\free_shop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hacks\shop_bypass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="helpers\memory.hpp">

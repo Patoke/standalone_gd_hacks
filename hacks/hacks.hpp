@@ -40,14 +40,20 @@ struct s_hacks {
 
 		if (!once) {
 
-			printf("	noclip bind: Middle mouse button\n");
-			printf("	unlock all bind: F1\n");
+			printf("	noclip bind: Middle mouse button (noclip lol)\n");
+			printf("	unlock all bind: F1 (unlocks all icons and colors)\n");
+			printf("	free chests: F2 (all chests for free, also bypass key chests)\n");
+			printf("	free shop: F3 (all items on all shops for free)\n");
+			printf("	shop bypass: F4 (lets you go into the diamonds and mechanic shop)\n");
 
 			once = true;
 		}
 		
 		CREATE_TOGGLE(noclip, VK_MBUTTON);
 		CREATE_TOGGLE(unlockall, VK_F1);
+		CREATE_TOGGLE(free_chests, VK_F2);
+		CREATE_TOGGLE(free_shop, VK_F3);
+		CREATE_TOGGLE(shop_bypass, VK_F4);
 	}
 
 	uintptr_t gd_base;
@@ -55,12 +61,18 @@ struct s_hacks {
 	// hack functions
 	void noclip();
 	void unlockall();
+	void free_chests();
+	void free_shop();
+	void shop_bypass();
 
 	// bind toggles
 	struct {
 
 		bool noclip = false;
 		bool unlockall = false;
+		bool free_chests = false;
+		bool free_shop = false;
+		bool shop_bypass = false;
 
 	} toggles;
 };
